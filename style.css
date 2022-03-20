@@ -1,0 +1,69 @@
+#heading{
+    width: 100%;
+    margin-top:0px;
+    font-size:30px ;
+    font-family: 'Akaya Telivigala', cursive;
+ font-family: 'Gluten', cursive;
+ font-family: 'Righteous', cursive;
+ font-family: 'Twinkle Star', cursive;
+ }
+ #disc1{
+    width: 150px;
+ }
+ #speed_disc{
+    float: left;
+    font-family: 'Gluten', cursive;
+ }
+ #volume_disc{
+     float:right;
+     font-family: 'Gluten', cursive;
+ }
+ #disc2{
+     width: 150px;
+ }
+ #play{
+     margin-top: 5px;
+     font-size: 30px;
+     width: 60px;
+ }
+ #pause{
+     font-size: 30px;
+     margin-top: 5px;
+ }
+ body{
+   background-image: url("dj_2_bg.jpg");
+   background-size: cover;
+   background-position: center;
+ }
+ canvas{
+     margin-top: 110px;
+     border-width: 7px;
+     border-right-color: blueviolet;
+     border-left-color: blueviolet;
+     border-top-color: cornflowerblue;
+     border-bottom-color: cornflowerblue;
+     border-style: ridge;
+     animation: canvas_animation 3s infinite;
+ }
+ @keyframes canvas_animation{
+ from{border-right-color:yellow;
+     border-left-color:yellow;
+     border-top-color: cornflowerblue;
+     border-bottom-color: cornflowerblue;}
+ to{
+     border-right-color:cornflowerblue;
+ border-left-color: cornflowerblue;
+ border-top-color: yellow;
+ border-bottom-color: yellow;
+ }
+ 
+ }
+ #play:hover{
+     background-color: violet;
+ }
+ #pause:hover{
+     background-color: turquoise;
+ }
+ #heading_info{
+     padding: 20px;
+ }
