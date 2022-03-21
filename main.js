@@ -34,7 +34,7 @@ function draw(){
  }
  song2.stop()
  if(status==false){
-     song.start()
+     song.play()
      document.getElementById("song").innerHTML="Harry Potter Theme Music Remix"
  }
  status_song2=song.isPlaying()
@@ -42,7 +42,10 @@ if(rightWristScore>0.2){
     circle(rightWristX,rightWristY,20)
 }
 song.stop()
-
+if(status_song2==false){
+    song.play()
+    document.getElementById("song").innerHTML="Peter Pan Theme"
+}
 }
 function gotPoses(result){
     if(result.length>0){
